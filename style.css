@@ -1,135 +1,143 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    border: none;
-    outline: none;
-  }
-  body {
-    background-color: #212121;
-  }
-  .wrapper {
-    width: 90%;
-    max-width: 25em;
-    background-color: #dadada;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
-    padding: 2em;
-    border-radius: 0.8em;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  }
-  .app-details {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .app-icon {
-    width: 9.37em;
-  }
-  .app-title {
-    font-size: 1.6em;
-    text-transform: uppercase;
-    margin-bottom: 1em;
-    color: #043df9;
-  }
-  .app-title span{
-    color: #e904f9;
-  }
-  label {
-    display: block;
-    font-weight: 600;
-  }
-  input#amount {
-    font-weight: 400;
-    font-size: 1.2em;
-    display: block;
-    width: 100%;
-    border-bottom: 2px solid #02002c;
-    color: #7a789d;
-    margin-bottom: 2em;
-    padding: 0.5em;
-  }
-  input#amount:focus {
-    color: #febf73;
-    border-color: #fed473;
-  }
-  .dropdowns {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1em;
-  }
-  select {
-    width: 100%;
-    padding: 0.6em;
-    font-size: 1em;
-    border-radius: 0.2em;
-    background-repeat: no-repeat;
-    background-position: right 15px top 50%, center;
-    background-size: 20px 20px;
-    background-color: #ff7505;
-    color: #ffffff;
-  }
-  
-  select option {
-    background-color: #ffffff;
-    color: #02002c;
-  }
-  
-  #result {
-    font-size: 1.2em;
-    text-align: center;
-    margin-top: 1em;
-    color: #02002c;
-    background-color: #ffeedb;
-    padding: 0.8em 0;
-  }
-  
-  button {
-    align-items: center;
-    font-size: 1.5em;
-    width: 100%;
-    background-color: #f88000;
-    padding: 1em 0;
-    margin-top: 2em;
-    border-radius: 0.3em;
-    color: #ffffff;
-    font-weight: 600;
-    appearance: none;
-    border-radius: 4px;
-    border-width: 0;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
-    box-sizing: border-box;
-    cursor: pointer;
-    display: inline-flex;
-    justify-content: center;
-    line-height: 1;
-    list-style: none;
-    overflow: hidden;
-    position: relative;
-    text-align: left;
-    text-decoration: none;
-    transition: box-shadow .15s,transform .15s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-    will-change: box-shadow,transform;
-  }
-  
-  button:focus {
-    box-shadow: #e7dfd6 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  }
-  
-  button:hover {
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-    transform: translateY(-2px);
-  }
-  
-  button:active {
-    box-shadow: #D6D6E7 0 3px 7px inset;
-    transform: translateY(2px);
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+  border: none;
+  outline: none;
+}
+body {
+  background-color: #212121;
+  background-image: url("https://wallpapers.com/images/hd/almost-black-with-navy-blue-background-aagwaqhmx0ggj2ny.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.wrapper {
+  width: 90%;
+  max-width: 25em;
+  background-color: #f8f4f4ab;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  padding: 2em;
+  border-radius: 0.8em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.app-details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.app-icon {
+  width: 9.37em;
+}
+.app-title {
+  font-size: 1.6em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  color: #043df9;
+}
+.app-title span {
+  color: #e904f9;
+}
+label {
+  display: block;
+  font-weight: 600;
+}
+input#amount {
+  font-weight: 400;
+  font-size: 1.2em;
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #02002c;
+  color: #7a789d;
+  margin-bottom: 2em;
+  padding: 0.5em;
+}
+input#amount:focus {
+  color: #febf73;
+  border-color: #fed473;
+}
+.dropdowns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+select {
+  width: 100%;
+  padding: 0.6em;
+  font-size: 1em;
+  border-radius: 0.2em;
+  background-repeat: no-repeat;
+  background-position: right 15px top 50%, center;
+  background-size: 20px 20px;
+  background-color: #ff7505;
+  color: #ffffff;
+}
+
+select option {
+  background-color: #ffffff;
+  color: #02002c;
+}
+
+#result {
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 1em;
+  color: #02002c;
+  background-color: #ffeedb;
+  padding: 0.8em 0;
+}
+
+button {
+  align-items: center;
+  font-size: 1.5em;
+  width: 100%;
+  background-color: #f88000;
+  padding: 1em 0;
+  margin-top: 2em;
+  border-radius: 0.3em;
+  color: #ffffff;
+  font-weight: 600;
+  appearance: none;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+}
+
+button:focus {
+  box-shadow: #e7dfd6 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
